@@ -122,14 +122,6 @@ h2{
     width: 100%;
 }
 
-@media(max-width:400px){
-
-    h2{
-        font-size: 5vw;
-    }
-
-}
-
 .des{
     max-width: 100%;
     box-sizing: border-box;
@@ -201,6 +193,14 @@ h4{
     margin-left: 2rem;
     margin-top: 2rem;
     justify-content: flex-end;
+}
+
+@media(max-width:400px){
+
+    h2{
+        font-size: 5vw;
+    }
+
 }
 
 @media(max-width:767px){
