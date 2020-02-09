@@ -1,3 +1,13 @@
+.no-gutters {
+    margin:0;
+    padding:0;
+}
+   
+.no-gutters　> .col,
+.no-gutters　> [class*="col-"] {
+    margin:0;
+    padding:0;
+}
 
 body{
     letter-spacing: .1rem;
@@ -112,6 +122,14 @@ h2{
     width: 100%;
 }
 
+@media(max-width:400){
+
+    h2{
+        font-size: 5vw;
+    }
+
+}
+
 .des{
     max-width: 100%;
     box-sizing: border-box;
@@ -122,14 +140,6 @@ h2{
     margin: 3rem;
 }
 
-@media(max-width:400){
-
-    h2.descr{
-        font-size: 15px;
-    }
-
-}
-
 h2.descr{
     margin-bottom: 3rem;
     max-width: 70vw;
@@ -138,7 +148,7 @@ h2.descr{
     background: #a6d3c8;
     color: white;
 }
-  
+
 h2.descr::before {
     position: absolute;
     content: '';
