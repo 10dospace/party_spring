@@ -1,0 +1,286 @@
+
+body{
+    letter-spacing: .1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    overflow-x: hidden;
+}
+
+ul li{
+    word-wrap: break-all;
+    width: 90%;
+}
+
+hr{
+    margin-bottom: 4rem;
+}
+
+h2{
+    padding-bottom: 2rem;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+.home-inner{
+    background-size: cover;
+    background-image: url(img/cake.JPG);
+    position: fixed;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: -1;    
+}
+
+.bg-light{
+    background-color: #66cdaa!important;
+}
+
+.navbar-nav .nav-link{
+    font-family: 'Big Shoulders Display', cursive!important;
+    font-size: 1.5em;
+    color: white ;
+    padding-left:.5rem;
+} 
+
+.navbar-brand {
+    font-size: 1.5em !important;
+    color:white ;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: #f5f5f5;
+}
+
+.caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .2rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.menupic{
+    height: 100%;
+    display: flex;
+    margin-left: .1rem;
+    box-sizing: border-box;
+}
+
+#menu{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#menup{
+    width: 100%;
+}
+
+.des{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+.decs{
+    margin: 3rem;
+}
+
+@media(max-width:400){
+
+    h2.descr{
+        font-size: 15px;
+    }
+
+}
+
+h2.descr{
+    margin-bottom: 3rem;
+    max-width: 70vw;
+    position: relative;
+    padding: 0.5em;
+    background: #a6d3c8;
+    color: white;
+}
+  
+h2.descr::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+}
+
+.m{
+    padding-right: 0;
+}
+
+p.descr{
+    padding-top: 1.8rem;
+}
+
+p.menul{
+    font-size: 2rem;
+}
+
+ul.menulist{
+    box-sizing: border-box;
+    max-width: 100%;
+    box-shadow :0px 0px 1px silver;
+    border: solid 1px whitesmoke;
+    padding: 0.5em 0 0.5em 2.3em;
+    position: relative;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+  
+ul.menulist li.menuli{
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none!important;
+}
+  
+ul.menulist li.menuli:before {
+    position: absolute;
+    color: gray; /*アイコン色*/
+}
+
+.info{
+    display: flex;
+}
+
+h4{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    justify-content: flex-end;
+}
+
+@media(max-width:767){
+
+    p.menul{
+        padding-top: 2rem!important;
+
+    }
+
+    h2.descr{
+        margin-top: 1.5rem;
+    }
+
+    .number{
+        padding-top: 2rem;
+        margin-top: 2rem;
+        margin-bottom: -.7rem;
+    }
+
+}
+
+.spaceimg{
+    margin-bottom: 6rem;
+}
+
+.number{
+    font-size: 2rem;
+    margin-bottom: -.5rem;
+    margin-left: 1rem;
+}
+
+h2.header{
+    padding: 0.4em 0.8em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #66cdaa;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+    max-width: 30%;
+    padding-right: 10px;
+}
+
+.cal{
+    margin-bottom: 3rem;
+}
+
+.contact{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: ghostwhite;
+    color: black;
+    padding: 2rem 0 2rem;
+    margin-top: 4rem;
+}
+  
+footer img{
+    height: 3rem;
+    margin: 1.5rem 0;
+}
+  
+footer a{
+    color: white;
+}
+  
+  footer svg.svg-inline--fa{
+    font-size: 4rem;
+    margin: 1.2rem .5rem 0 0;
+}
+  
+  footer svg.svg-inline--fa:hover{
+    color: lavender!important;
+}
+  
+  hr.socket{
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+}
+
+.fa-facebook-square{
+    color: #2163af;
+}
+
+.fa-twitter-square{
+    color: #55acee;
+    font-size: 4rem;
+}
+
+.fa-instagram{
+    color: #D93177;
+    font-size: 4rem;
+}
