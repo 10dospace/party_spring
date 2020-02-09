@@ -151,6 +151,14 @@ h2.descr::before {
     border-right: solid 20px rgb(149, 158, 155);
 }
 
+@media(max-width:400px){
+
+    h2{
+        font-size: 7vw;
+    }
+
+}
+
 .m{
     padding-right: 0;
 }
@@ -193,14 +201,6 @@ h4{
     margin-left: 2rem;
     margin-top: 2rem;
     justify-content: flex-end;
-}
-
-@media(max-width:400px){
-
-    h2{
-        font-size: 5vw;
-    }
-
 }
 
 @media(max-width:767px){
